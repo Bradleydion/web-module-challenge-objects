@@ -102,7 +102,7 @@ const reviews = [
 ];
 
 /* Task 3: Console.log just Julius' feedback */
-for (i=0; i < reviews.length; i++){
+for (let i=0; i < reviews.length; i++){
   if(reviews[i].name === "Julius"){
     console.log(reviews[i]['feedback'])
   }
@@ -111,10 +111,13 @@ for (i=0; i < reviews.length; i++){
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
 reviews.unshift({name:"Bradley",rating: 4,feedback:"they had great ice cream"})
-console.log(reviews)
+// console.log(reviews)
 
 
-/* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+// /* Task 5: Add the following feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
+console.log(reviews.length-1)
+reviews[8].feedback= 'this place is chill with really cool people, great for getting work done on weekdays'
+console.log(reviews[8])
 
 /*  Task 6: Write a function to return a review based on the index of the review in the array.
 
