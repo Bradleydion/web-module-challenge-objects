@@ -110,7 +110,7 @@ for (i=0; i < reviews.length; i++){
 }
 
 /* Task 4: Add a new rating with your (fictitious) opinions of the restaurant in the same format as the reviews above. */
-reviews.pop({name:"Bradley",rating: 4,feedback:"they had great ice cream"})
+reviews.unshift({name:"Bradley",rating: 4,feedback:"they had great ice cream"})
 console.log(reviews)
 
 
