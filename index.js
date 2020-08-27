@@ -33,16 +33,29 @@ Your method should accept:
 and should return a number. 
 
 For example, burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2*/
-function discount(item, discountType){
-if (name===item && discountType === 'teacher'|| 'students')
-{const total= name.price - (name.price * .25)
-console.log (total)
+
+
+// function discount(item, discountType){
+// if (name===item && discountType === 'teacher'|| 'students')
+// {const total= name.price - (name.price * .25)
+// console.log (total)
+// }
+// else if (obj.string===item && discountType=== 'public'){const total= obj.string.price - (obj.string.price * .10)
+//   console.log (total)
+//   }
+// The above doesnt follow the question(or work). 
+
+function discount(discountType){
+if (discountType === "teacher" || "student"){
+  obj.discount = obj.price -(Obj.price*.25)
+  console.log(total)}
+  else if(discountType === "public"){
+    obj.discount = obj.price -(Obj.price*.25)
+    console.log(total)}
 }
-else if (obj.string===item && discountType=== 'public'){const total= obj.string.price - (obj.string.price * .10)
-  console.log (total)
-  }
-}
-discount(burger,"teacher" )
+burger.discount("teacher")
+
+
 
 ///////////////Reviews (MVP)///////////////////
 
