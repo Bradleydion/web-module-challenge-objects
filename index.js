@@ -45,15 +45,17 @@ For example, burger.discount("teacher") would return 13.5 and burger.discount("p
 //   }
 // The above doesnt follow the question(or work). 
 
-function discount(discountType){
+burger.discount = function disc(discountType){
 if (discountType === "teacher" || "student"){
-  obj.discount = obj.price -(Obj.price*.25)
-  console.log(total)}
+  discount = this.price -(this.price*.25)
+  console.log(discount)}
   else if(discountType === "public"){
-    obj.discount = obj.price -(Obj.price*.25)
-    console.log(total)}
+    discount = this.price -(this.price*.25)
+    console.log(discount)}
 }
-burger.discount("teacher")
+burger.discount ("teacher")
+
+
 
 
 
